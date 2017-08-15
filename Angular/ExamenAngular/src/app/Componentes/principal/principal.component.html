@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <img class="encabezado"
+           src="https://i.ytimg.com/vi/SBLSTf7IgA0/maxresdefault.jpg" alt=""> <br>
+    </div>
+    <div class="col-sm-7">
+      <h1 class="titulo"></h1>
+    </div>
+  </div>
+<br>
+  <div class="row">
+    <div id="presentacion-personas" class="col-sm-4"
+         *ngFor="let variablenave of naves;let indice = index;">
+
+      <app-nave [naveDatos]="variablenave">
+
+      </app-nave>
+
+    </div>
+  </div>
+</div>
